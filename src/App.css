@@ -8,6 +8,9 @@ body {
 }
 
 /*****************NAVBAR**********/
+nav {
+  z-index: 2;
+}
 nav a.nav-link {
   font-weight: 300;
   letter-spacing: 0.0475rem;
@@ -32,4 +35,67 @@ nav ul li {
 .navbar-toggler-icon {
   color: #fff !important;
 }
-/*42.29*/
+
+/***********HEADER**************/
+.main-info {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Roboto Condensed", sans-serif;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.header-wraper {
+  height: 86vh;
+  background-image: linear-gradient(to bottom right, #696969, black);
+}
+
+.main-info h1 {
+  color: dodgerblue;
+  text-transform: uppercase;
+}
+/**************TYPED TEXT*********/
+.typed-text {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.btn-main-offer {
+  border: 1px solid dodgerblue;
+  text-transform: uppercase;
+  border-radius: 0;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  color: #fff;
+  margin-top: 2rem;
+  text-decoration: none;
+}
+.btn-main-offer:hover {
+  text-decoration: none;
+  background-color: dodgerblue;
+  transition: 0.2s ease-in-out;
+  color: #fff;
+}
+.tsparticles-canvas-el {
+  position: absolute;
+  height: 86vh;
+  width: 100vw;
+  z-index: 1;
+}
+@media (max-width: 768px) {
+  .main-info h1 {
+    font-size: 1.7rem !important;
+  }
+  .typed-text {
+    font-size: 1.4rem !important;
+  }
+  .image {
+    width: 15rem;
+  }
+}
