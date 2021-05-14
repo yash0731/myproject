@@ -1,0 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+:root {
+  --primary-white: #fff;
+}
+
+body {
+  font-family: "Robota Condensed" sans-serif;
+}
+
+/*****************NAVBAR**********/
+nav a.nav-link {
+  font-weight: 300;
+  letter-spacing: 0.0475rem;
+  cursor: pointer;
+}
+nav ul li {
+  text-transform: uppercase;
+}
+
+.navbar-nav > li > a {
+  margin-right: 0.75rem;
+  margin-left: 00.75rem;
+  color: var(--primary-white) !important;
+  border-bottom: 0.1875rem solid rgba(255, 255, 255, 0);
+}
+.navbar-nav > li > a:hover {
+  border-bottom: 0.1875rem solid dodgerblue;
+}
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid dodgerblue;
+}
+.navbar-toggler-icon {
+  color: #fff !important;
+}
+/*42.29*/
